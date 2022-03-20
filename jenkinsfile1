@@ -16,5 +16,12 @@ pipeline {
 					echo " deploy stage"
 				     }
 				       }
+				       post{
+				       success{
+				       echo "build success"
+				       }
+				       failure{
+				       echo "build failure"
+				       }
 			}
 	}
